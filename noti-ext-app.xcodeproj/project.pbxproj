@@ -7,6 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D22DC15C2A63D48B00AB8CED /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D22DC15B2A63D48B00AB8CED /* NotificationService.swift */; };
+		D22DC1602A63D48B00AB8CED /* NotifExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = D22DC1592A63D48B00AB8CED /* NotifExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		D274E7D42A68017300B53D51 /* UserNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D274E7D32A68017300B53D51 /* UserNotifications.framework */; };
+		D274E7D62A68017300B53D51 /* UserNotificationsUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D274E7D52A68017300B53D51 /* UserNotificationsUI.framework */; };
+		D274E7D92A68017300B53D51 /* NotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D274E7D82A68017300B53D51 /* NotificationViewController.swift */; };
+		D274E7DC2A68017300B53D51 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D274E7DA2A68017300B53D51 /* MainInterface.storyboard */; };
+		D274E7E02A68017300B53D51 /* NotifContentExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = D274E7D12A68017300B53D51 /* NotifContentExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		D274E7E62A68391600B53D51 /* promobanner.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D274E7E52A68391600B53D51 /* promobanner.jpg */; };
+		D274E7E72A68391600B53D51 /* promobanner.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D274E7E52A68391600B53D51 /* promobanner.jpg */; };
+		D274E7E82A68391600B53D51 /* promobanner.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D274E7E52A68391600B53D51 /* promobanner.jpg */; };
 		D298D0AF2A6024B100DF7357 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D298D0AE2A6024B100DF7357 /* AppDelegate.swift */; };
 		D298D0B12A6024B100DF7357 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D298D0B02A6024B100DF7357 /* SceneDelegate.swift */; };
 		D298D0B32A6024B100DF7357 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D298D0B22A6024B100DF7357 /* ViewController.swift */; };
@@ -15,7 +25,52 @@
 		D298D0BB2A6024B200DF7357 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D298D0B92A6024B200DF7357 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		D22DC15E2A63D48B00AB8CED /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D298D0A32A6024B100DF7357 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D22DC1582A63D48B00AB8CED;
+			remoteInfo = NotifExtension;
+		};
+		D274E7DE2A68017300B53D51 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D298D0A32A6024B100DF7357 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D274E7D02A68017300B53D51;
+			remoteInfo = NotifContentExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		D22DC1642A63D48B00AB8CED /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				D22DC1602A63D48B00AB8CED /* NotifExtension.appex in Embed Foundation Extensions */,
+				D274E7E02A68017300B53D51 /* NotifContentExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		D22DC1542A63D44800AB8CED /* noti-ext-app.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "noti-ext-app.entitlements"; sourceTree = "<group>"; };
+		D22DC1592A63D48B00AB8CED /* NotifExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = NotifExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		D22DC15B2A63D48B00AB8CED /* NotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
+		D22DC15D2A63D48B00AB8CED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D22DC1652A63D51E00AB8CED /* NotifExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = NotifExtension.entitlements; sourceTree = "<group>"; };
+		D274E7D12A68017300B53D51 /* NotifContentExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = NotifContentExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		D274E7D32A68017300B53D51 /* UserNotifications.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotifications.framework; path = System/Library/Frameworks/UserNotifications.framework; sourceTree = SDKROOT; };
+		D274E7D52A68017300B53D51 /* UserNotificationsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotificationsUI.framework; path = System/Library/Frameworks/UserNotificationsUI.framework; sourceTree = SDKROOT; };
+		D274E7D82A68017300B53D51 /* NotificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationViewController.swift; sourceTree = "<group>"; };
+		D274E7DB2A68017300B53D51 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		D274E7DD2A68017300B53D51 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D274E7E42A68018500B53D51 /* NotifContentExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = NotifContentExtension.entitlements; sourceTree = "<group>"; };
+		D274E7E52A68391600B53D51 /* promobanner.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = promobanner.jpg; sourceTree = "<group>"; };
 		D298D0AB2A6024B100DF7357 /* noti-ext-app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "noti-ext-app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D298D0AE2A6024B100DF7357 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D298D0B02A6024B100DF7357 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -27,6 +82,22 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		D22DC1562A63D48B00AB8CED /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D274E7CE2A68017300B53D51 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D274E7D62A68017300B53D51 /* UserNotificationsUI.framework in Frameworks */,
+				D274E7D42A68017300B53D51 /* UserNotifications.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D298D0A82A6024B100DF7357 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -37,10 +108,44 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D22DC15A2A63D48B00AB8CED /* NotifExtension */ = {
+			isa = PBXGroup;
+			children = (
+				D22DC1652A63D51E00AB8CED /* NotifExtension.entitlements */,
+				D22DC15B2A63D48B00AB8CED /* NotificationService.swift */,
+				D22DC15D2A63D48B00AB8CED /* Info.plist */,
+			);
+			path = NotifExtension;
+			sourceTree = "<group>";
+		};
+		D274E7D22A68017300B53D51 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D274E7D32A68017300B53D51 /* UserNotifications.framework */,
+				D274E7D52A68017300B53D51 /* UserNotificationsUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D274E7D72A68017300B53D51 /* NotifContentExtension */ = {
+			isa = PBXGroup;
+			children = (
+				D274E7E42A68018500B53D51 /* NotifContentExtension.entitlements */,
+				D274E7D82A68017300B53D51 /* NotificationViewController.swift */,
+				D274E7E52A68391600B53D51 /* promobanner.jpg */,
+				D274E7DA2A68017300B53D51 /* MainInterface.storyboard */,
+				D274E7DD2A68017300B53D51 /* Info.plist */,
+			);
+			path = NotifContentExtension;
+			sourceTree = "<group>";
+		};
 		D298D0A22A6024B100DF7357 = {
 			isa = PBXGroup;
 			children = (
 				D298D0AD2A6024B100DF7357 /* noti-ext-app */,
+				D22DC15A2A63D48B00AB8CED /* NotifExtension */,
+				D274E7D72A68017300B53D51 /* NotifContentExtension */,
+				D274E7D22A68017300B53D51 /* Frameworks */,
 				D298D0AC2A6024B100DF7357 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -49,6 +154,8 @@
 			isa = PBXGroup;
 			children = (
 				D298D0AB2A6024B100DF7357 /* noti-ext-app.app */,
+				D22DC1592A63D48B00AB8CED /* NotifExtension.appex */,
+				D274E7D12A68017300B53D51 /* NotifContentExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -56,6 +163,7 @@
 		D298D0AD2A6024B100DF7357 /* noti-ext-app */ = {
 			isa = PBXGroup;
 			children = (
+				D22DC1542A63D44800AB8CED /* noti-ext-app.entitlements */,
 				D298D0AE2A6024B100DF7357 /* AppDelegate.swift */,
 				D298D0B02A6024B100DF7357 /* SceneDelegate.swift */,
 				D298D0B22A6024B100DF7357 /* ViewController.swift */,
@@ -70,6 +178,40 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		D22DC1582A63D48B00AB8CED /* NotifExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D22DC1612A63D48B00AB8CED /* Build configuration list for PBXNativeTarget "NotifExtension" */;
+			buildPhases = (
+				D22DC1552A63D48B00AB8CED /* Sources */,
+				D22DC1562A63D48B00AB8CED /* Frameworks */,
+				D22DC1572A63D48B00AB8CED /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NotifExtension;
+			productName = NotifExtension;
+			productReference = D22DC1592A63D48B00AB8CED /* NotifExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		D274E7D02A68017300B53D51 /* NotifContentExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D274E7E32A68017300B53D51 /* Build configuration list for PBXNativeTarget "NotifContentExtension" */;
+			buildPhases = (
+				D274E7CD2A68017300B53D51 /* Sources */,
+				D274E7CE2A68017300B53D51 /* Frameworks */,
+				D274E7CF2A68017300B53D51 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NotifContentExtension;
+			productName = NotifContentExtension;
+			productReference = D274E7D12A68017300B53D51 /* NotifContentExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		D298D0AA2A6024B100DF7357 /* noti-ext-app */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = D298D0BF2A6024B200DF7357 /* Build configuration list for PBXNativeTarget "noti-ext-app" */;
@@ -77,10 +219,13 @@
 				D298D0A72A6024B100DF7357 /* Sources */,
 				D298D0A82A6024B100DF7357 /* Frameworks */,
 				D298D0A92A6024B100DF7357 /* Resources */,
+				D22DC1642A63D48B00AB8CED /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				D22DC15F2A63D48B00AB8CED /* PBXTargetDependency */,
+				D274E7DF2A68017300B53D51 /* PBXTargetDependency */,
 			);
 			name = "noti-ext-app";
 			productName = "noti-ext-app";
@@ -97,6 +242,12 @@
 				LastSwiftUpdateCheck = 1500;
 				LastUpgradeCheck = 1500;
 				TargetAttributes = {
+					D22DC1582A63D48B00AB8CED = {
+						CreatedOnToolsVersion = 15.0;
+					};
+					D274E7D02A68017300B53D51 = {
+						CreatedOnToolsVersion = 15.0;
+					};
 					D298D0AA2A6024B100DF7357 = {
 						CreatedOnToolsVersion = 15.0;
 					};
@@ -116,16 +267,36 @@
 			projectRoot = "";
 			targets = (
 				D298D0AA2A6024B100DF7357 /* noti-ext-app */,
+				D22DC1582A63D48B00AB8CED /* NotifExtension */,
+				D274E7D02A68017300B53D51 /* NotifContentExtension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		D22DC1572A63D48B00AB8CED /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D274E7E72A68391600B53D51 /* promobanner.jpg in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D274E7CF2A68017300B53D51 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D274E7DC2A68017300B53D51 /* MainInterface.storyboard in Resources */,
+				D274E7E82A68391600B53D51 /* promobanner.jpg in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D298D0A92A6024B100DF7357 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				D298D0BB2A6024B200DF7357 /* LaunchScreen.storyboard in Resources */,
+				D274E7E62A68391600B53D51 /* promobanner.jpg in Resources */,
 				D298D0B82A6024B200DF7357 /* Assets.xcassets in Resources */,
 				D298D0B62A6024B100DF7357 /* Main.storyboard in Resources */,
 			);
@@ -134,6 +305,22 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		D22DC1552A63D48B00AB8CED /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D22DC15C2A63D48B00AB8CED /* NotificationService.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D274E7CD2A68017300B53D51 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D274E7D92A68017300B53D51 /* NotificationViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D298D0A72A6024B100DF7357 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -146,7 +333,28 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		D22DC15F2A63D48B00AB8CED /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D22DC1582A63D48B00AB8CED /* NotifExtension */;
+			targetProxy = D22DC15E2A63D48B00AB8CED /* PBXContainerItemProxy */;
+		};
+		D274E7DF2A68017300B53D51 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D274E7D02A68017300B53D51 /* NotifContentExtension */;
+			targetProxy = D274E7DE2A68017300B53D51 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
+		D274E7DA2A68017300B53D51 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D274E7DB2A68017300B53D51 /* Base */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
 		D298D0B42A6024B100DF7357 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -166,6 +374,110 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		D22DC1622A63D48B00AB8CED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = NotifExtension/NotifExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = E9M62S6JBG;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = NotifExtension/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = NotifExtension;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "mkdevnotif.noti-ext-app.NotifExtension";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D22DC1632A63D48B00AB8CED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = NotifExtension/NotifExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = E9M62S6JBG;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = NotifExtension/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = NotifExtension;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "mkdevnotif.noti-ext-app.NotifExtension";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		D274E7E12A68017300B53D51 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = NotifContentExtension/NotifContentExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = E9M62S6JBG;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = NotifContentExtension/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = NotifContentExtension;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "mkdevnotif.noti-ext-app.NotifContentExtension";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D274E7E22A68017300B53D51 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = NotifContentExtension/NotifContentExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = E9M62S6JBG;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = NotifContentExtension/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = NotifContentExtension;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "mkdevnotif.noti-ext-app.NotifContentExtension";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		D298D0BD2A6024B200DF7357 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -288,11 +600,13 @@
 		D298D0C02A6024B200DF7357 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "noti-ext-app/noti-ext-app.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 8BK89JSD2Y;
+				DEVELOPMENT_TEAM = E9M62S6JBG;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "noti-ext-app/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -305,7 +619,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "samplemkdev.noti-ext-app";
+				PRODUCT_BUNDLE_IDENTIFIER = "mkdevnotif.noti-ext-app";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -316,11 +630,13 @@
 		D298D0C12A6024B200DF7357 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "noti-ext-app/noti-ext-app.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 8BK89JSD2Y;
+				DEVELOPMENT_TEAM = E9M62S6JBG;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "noti-ext-app/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -333,7 +649,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "samplemkdev.noti-ext-app";
+				PRODUCT_BUNDLE_IDENTIFIER = "mkdevnotif.noti-ext-app";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -344,6 +660,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		D22DC1612A63D48B00AB8CED /* Build configuration list for PBXNativeTarget "NotifExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D22DC1622A63D48B00AB8CED /* Debug */,
+				D22DC1632A63D48B00AB8CED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D274E7E32A68017300B53D51 /* Build configuration list for PBXNativeTarget "NotifContentExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D274E7E12A68017300B53D51 /* Debug */,
+				D274E7E22A68017300B53D51 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		D298D0A62A6024B100DF7357 /* Build configuration list for PBXProject "noti-ext-app" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
